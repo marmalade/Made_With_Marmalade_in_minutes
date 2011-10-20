@@ -1,0 +1,31 @@
+#!/usr/bin/env mkb
+
+# files specifies all files to build
+files
+{
+    ["src"]
+    (src)
+    main.cpp
+    game.cpp
+    Iw2DSprite.cpp
+    (h)
+    game.h
+    Iw2DSprite.h
+}
+
+includepaths
+{
+    h
+}
+
+subprojects
+{
+    iw2d
+}
+
+assets
+{
+    (data)
+    Textures/Ball.bmp
+    Textures/Paddle.bmp
+}
